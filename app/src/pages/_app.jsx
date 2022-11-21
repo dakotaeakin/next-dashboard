@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
           <SideNavbar />
           <main className="content">
             <Topbar />
-            <Box sx={{ ml: 2 }}>
+            <Box sx={{ ml: 2, mr: 2 }}>
               <Component {...pageProps} />
             </Box>
           </main>
