@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { ColorModeContext, useMode } from "../theme";
-import { ThemeProvider } from "@mui/material";
+import { Box, ThemeProvider } from "@mui/material";
 import { CssBaseline } from "@mui/material";
 import Topbar from "../components/global/Topbar";
 import SideNavbar from "../components/global/Sidebar";
@@ -17,7 +17,9 @@ function MyApp({ Component, pageProps }) {
           <SideNavbar />
           <main className="content">
             <Topbar />
-            <Component {...pageProps} />
+            <Box sx={{ ml: 2 }}>
+              <Component {...pageProps} />
+            </Box>
           </main>
         </div>
       </ThemeProvider>
