@@ -45,6 +45,7 @@ const Team = () => {
       renderCell: ({ row: { access } }) => {
         return (
           <Box
+            maxWidth="175px"
             width="60%"
             m="0 0"
             p="5px"
@@ -94,6 +95,14 @@ const Team = () => {
           "&  .MuiDataGrid-footerContainer": {
             borderTop: "none",
             backgroundColor: colors.blueAccent[700],
+            borderRadius: "0 0 5px 5px",
+          },
+          "& .Mui-selected": {
+            backgroundColor: `${colors.primary[600]} !important`,
+            borderBottom: "none",
+          },
+          "&::-webkit-scrollbar": {
+            width: "0",
           },
         }}
       >
