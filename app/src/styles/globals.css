@@ -8,6 +8,13 @@ body,
   height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
+  --doc-height: 100%;
+  
+  
+}
+
+body{
+  position: fixed;
 }
 
 .app {
