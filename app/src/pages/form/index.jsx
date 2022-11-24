@@ -54,6 +54,7 @@ const Form = () => {
         }) => (
           <form onSubmit={handleSubmit}>
             <Box
+              m="40px 0 0 0"
               display="grid"
               gap="30px"
               gridTemplateColumns="repeat(4, minmax(0, 1fr))"
@@ -91,7 +92,7 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="email"
+                label="Email"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.email}
